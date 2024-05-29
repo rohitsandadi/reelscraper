@@ -33,14 +33,17 @@ if hasattr(config, 'USERNAME') and hasattr(config, 'PASSWORD') and hasattr(confi
             if post.is_video:
                 print(f"Downloading video post {count+1}")
                 bot.download_post(post, target=profile.username)
+                if count==0:
+                    file = (""+profile.username+str(count+1))
+                    os.mkdir(os.getcwd()+"/"+(profile.username+"_comments"))
 
-                directory = ""+profile.username+str(count+1)
-                os.chdir(os.getcwd()+"/"+profile.username)
+                os.chdir(os.getcwd()+"/"+(profile.username+"_comments"))
 
+                file = (""+profile.username+str(count+1))
                 # Extract and print comments
                 comments = post.get_comments()
                 for comment in comments:
-                    with open(directory) as my_file:
+                    with open(file, "a") as my_file:
                         my_file.write(f"Comment by {comment.owner.username}: {comment.text}"+"\n")
 
                 os.chdir(originaldir)

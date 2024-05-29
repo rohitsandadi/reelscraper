@@ -2,10 +2,8 @@ USERNAME = "algokrvdr"
 PASSWORD = "krvdr1!!!"
 
 #List account names here
-ACCOUNTS = [
-    "tomholland2013",
-    "therock",
-    "travisscott",
+ACCOUNTS = [ #total 26 accounts
+    "rap",
     "jeremeycorbyn",
     "cnn",
     "foxnews",
@@ -15,10 +13,19 @@ ACCOUNTS = [
     "fgirlsclub",
     "nationalreview",
     "nprpolitics",
-    ""
-
-    "realcandaceowens",
-    "officialbenshapiro"
+    "drumarjohnson",
+    "berniesanders",
+    "abcnews",
+    "lgbtq",
+    "blklivesmatter",
+    "indyamoore",
+    "thepeahceproject",
+    "earthrise.studio"
+    "joerogan",
+    "aljazeeraenglish",
+    "letstalkpalestine",
+    "officialbenshapiro",
+    "realcandaceowens"
 ]
 
 FETCH_LIMIT = 20
