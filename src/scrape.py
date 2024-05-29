@@ -31,6 +31,7 @@ if hasattr(config, 'USERNAME') and hasattr(config, 'PASSWORD') and hasattr(confi
 
         for post in posts:
             if post.is_video:
+                commentcount = 0
                 print(f"Downloading video post {count+1}")
                 bot.download_post(post, target=profile.username)
                 if count==0:
@@ -45,6 +46,9 @@ if hasattr(config, 'USERNAME') and hasattr(config, 'PASSWORD') and hasattr(confi
                 for comment in comments:
                     with open(file, "a") as my_file:
                         my_file.write(f"Comment by {comment.owner.username}: {comment.text}"+"\n")
+                    commentcount += 1
+                    if commentcount == 750:
+                        break
 
                 os.chdir(originaldir)
 

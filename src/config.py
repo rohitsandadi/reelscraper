@@ -3,19 +3,19 @@ PASSWORD = "krvdr1!!!"
 
 #List account names here
 ACCOUNTS = [ #total 26 accounts
-    "rap",
-    "jeremeycorbyn",
-    "cnn",
-    "foxnews",
-    "nytimes",
-    "wearebreitbart",
-    "girleffect",
-    "fgirlsclub",
+    #"rap", finished
+    #"jeremycorbyn", finished
+    #"cnn", 6/15
+    #"foxnews",
+    #"nytimes",
+    #"wearebreitbart",
+    #"girleffect", finished
+    "girlsclub",
     "nationalreview",
-    "nprpolitics",
+    #"nprpolitics",
     "drumarjohnson",
     "berniesanders",
-    "abcnews",
+    #"abcnews",
     "lgbtq",
     "blklivesmatter",
     "indyamoore",
@@ -25,7 +25,7 @@ ACCOUNTS = [ #total 26 accounts
     "aljazeeraenglish",
     "letstalkpalestine",
     "officialbenshapiro",
-    "realcandaceowens"
+    #"realcandaceowens"
 ]
 
-FETCH_LIMIT = 20
+FETCH_LIMIT = 15

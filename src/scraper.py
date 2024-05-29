@@ -1,3 +1,6 @@
+#deprecated beta version of the scraper
+# DONT USE
+
 import instaloader
 import config
 

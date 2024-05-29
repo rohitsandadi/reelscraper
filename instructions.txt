@@ -1,0 +1,8 @@
+How to Use This Scraper:
+
+0. Install instaloader (req.txt) and ffmpeg
+1. Check config.py and edit the values to what you want
+2. run the scrape.py python file to scrape the reels and comments based on the config
+3. run cleaner.py on the src folder to get rid of all the unecessary files that were scraped
+   (json + pngs + etc.)
+4. run compress.py on the src folder to compress all the videos scraped
