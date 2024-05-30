@@ -47,7 +47,7 @@ if hasattr(config, 'USERNAME') and hasattr(config, 'PASSWORD') and hasattr(confi
                     with open(file, "a") as my_file:
                         my_file.write(f"Comment by {comment.owner.username}: {comment.text}"+"\n")
                     commentcount += 1
-                    if commentcount == 750:
+                    if commentcount == 750: #scraping maximum of 750 comments per post
                         break
 
                 os.chdir(originaldir)
