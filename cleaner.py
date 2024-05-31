@@ -8,7 +8,7 @@ def clean(directory):
     for root, dirs, files in os.walk(directory):
         for file in files:
             #print(not file.lower().endswith(".mp4"))
-            if not (file.lower().endswith(".mp4") or file.lower().endswith(".py")):
+            if (file.lower().endswith(".json.xz") or file.lower().endswith(".jpg")):
                    # or file.lower().endswith(".txt") or file.lower().endswith(".py")):
                 file_path = os.path.join(root, file)
                 os.remove(file_path)

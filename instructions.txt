@@ -7,4 +7,5 @@ How to Use This Scraper:
 3. run cleaner.py on the src folder to get rid of all the unecessary files that were scraped
    (json + pngs + etc.)
 4. run subtitle.py on the folder with the necessary in order to generate transcriptions for all the videos
-5. run compress.py on the src folder to compress all the videos scraped
+transcriptions will show up in a transcriptions folder that will be created(if one does not already exist)
+5. run compress.py on the src folder to compress all the videos scraped (optional) (not reccomended)
