@@ -1,8 +1,10 @@
 How to Use This Scraper:
 
-0. Install instaloader (req.txt) and ffmpeg
+0. Install instaloader (req.txt) and ffmpeg and whisper(https://github.com/openai/whisper)
+    - For whisper: If you are on MacOS then you might get the error
 1. Check config.py and edit the values to what you want
 2. run the scrape.py python file to scrape the reels and comments based on the config
 3. run cleaner.py on the src folder to get rid of all the unecessary files that were scraped
    (json + pngs + etc.)
-4. run compress.py on the src folder to compress all the videos scraped
+4. run subtitle.py on the folder with the necessary in order to generate transcriptions for all the videos
+5. run compress.py on the src folder to compress all the videos scraped
